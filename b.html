@@ -30,7 +30,7 @@
     <script src="https://unpkg.com/@rive-app/canvas"></script>
     <script>
         const r = new rive.Rive({
-            src: "lab3.riv" + "?v=" + Math.random(),
+            src: "Lab3.riv" + "?v=" + Math.random(),
             canvas: document.getElementById("riveCanvas"),
             autoplay: true,
             artboard: "Artboard2",
@@ -38,7 +38,7 @@
             onLoad: () => {
                 const artboard = r.artboard;
 
-                const hoverInput = r.stateMachineInputs("State Machine 1").find(i => i.name === "isHover");
+                const hoverInput = r.stateMachineInputs("State Machine 1").find(i => i.name === "isHealing");
                 const btnStartAnimation = document.getElementById("startAnimation");
 
                 btnStartAnimation.addEventListener("click", () => {
